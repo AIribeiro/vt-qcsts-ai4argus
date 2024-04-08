@@ -1,0 +1,86 @@
+# Core Libraries
+aiohttp
+aiosignal
+async-timeout
+attrs
+
+# Azure SDK
+azure-ai-formrecognizer
+azure-common
+azure-core
+azure-identity
+azure-search-documents
+azure-storage-blob
+azure-storage-file-datalake
+azure-storage-file
+azure-storage-file-share
+azure-data-tables
+azure-cognitiveservices-speech
+azure-functions
+azure-ai-translation-document
+
+# Security and Authentication
+certifi
+cffi
+charset-normalizer
+cryptography
+oauthlib
+pyjwt[crypto]
+msal
+msal-extensions
+
+# Data Processing and Analytics
+et-xmlfile
+isodate
+numpy
+pandas
+python-dateutil
+pytz
+openpyxl
+matplotlib
+
+# HTTP and Requests
+requests
+requests-oauthlib
+urllib3
+
+# Utilities and Helpers
+frozenlist
+idna
+multidict
+portalocker
+pycparser
+regex
+six
+tenacity
+tqdm
+typing-extensions
+tzdata
+sentence-transformers
+# AI and Machine Learning
+openai[datalib]
+nltk
+
+# Web Development and APIs
+streamlit
+streamlit-feedback
+streamlit-image-select
+streamlit-player
+streamlit_extras
+
+# Document Processing
+PyMuPDF
+pypdf
+fpdf2
+
+# Miscellaneous
+yarl
+tiktoken
+types-pytz
+
+
+
+azure-core
+azure-data-tables
+streamlit_extras
+validators
