@@ -653,8 +653,8 @@ st.subheader(translate_anything("Um assistente inovador com tecnologia de IA que
 
 # Display the number of questions answered by the chatbot
 number_of_answers = count_chatbot_answers()
-
-st.write(translate_anything("""Este aplicativo foi projetado especificamente para auxiliar a equipe de serviço técnico GTT - Qualidade e Satisfação do Cliente LAm, fornecendo assistência de diagnóstico técnico rápido e preciso aos técnicos de revendedores de caminhões, aproveitando um banco de dados de documentos de instruções de carroceria da Volvo e casos Argus resolvidos anteriormente. Até o momento, ela respondeu a """, source_language, target_languages) + str(number_of_answers) + translate_anything(""" perguntas, com uma média de {average} perguntas por sessão.""", source_language, target_languages))
+average = calculate_average_questions_per_session(azure_table_service)
+st.write(translate_anything("""Este aplicativo foi projetado especificamente para auxiliar a equipe de serviço técnico GTT - Qualidade e Satisfação do Cliente LAm, fornecendo assistência de diagnóstico técnico rápido e preciso aos técnicos de revendedores de caminhões, aproveitando um banco de dados de documentos de instruções de carroceria da Volvo e casos Argus resolvidos anteriormente. Até o momento, ela respondeu a **""", source_language, target_languages) + str(number_of_answers) + translate_anything("""** perguntas, com uma média de **""", source_language, target_languages)+ str(average) + translate_anything("""** perguntas por sessão.""", source_language, target_languages))
 
 st.write(f"""Este sistema de IA pode interpretar descrições de avarias e recomendar procedimentos e soluções de diagnóstico, agilizando o processo de suporte técnico.
 Se não tiver certeza do que perguntar, sinta-se à vontade para clicar no botão **'Sugira-me uma pergunta'** na barra lateral.""")
